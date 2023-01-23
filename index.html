@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Mochiy+Pop+One&family=Poppins&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="l1 l">
+          <div class="search">Search for places</div>
+          <div class="geo"><i class="fas fa-search-location"></i></div>
+        </div>
+        <div class="l2 l">
+          <img src="img/Cloud-background.png" class="cloudsB" alt="" />
+          <img src="img/Shower.png" class="todayImage" alt="" />
+        </div>
+        <div class="l3 l">
+          <span class="tempToday tem">-</span
+          ><span class="uni unitToday">৹C</span>
+        </div>
+        <div class="l4 l catToday">-</div>
+        <div class="l5 l">
+          <span class="day">Today</span> .
+          <span class="date dateDay">-</span>
+        </div>
+        <div class="l6 l">
+          <i class="fas fa-map-marker-alt"></i><span class="loc">-</span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="r1">
+          <div class="celsius active">৹C</div>
+          <div class="far">৹F</div>
+        </div>
+        <div class="r2">
+          <div class="d1 d">
+            <div class="dateDay ds">Tomorrow</div>
+            <img src="img/Shower.png" class="icon" alt="" />
+            <div class="temp">
+              <div class="min">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+              <div class="max">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+            </div>
+          </div>
+          <div class="d2 d">
+            <div class="dateDay ds">Sun, 7 Jan</div>
+            <img src="img/HeavyCloud.png" class="icon" alt="" />
+            <div class="temp">
+              <div class="min">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+              <div class="max">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+            </div>
+          </div>
+          <div class="d3 d">
+            <div class="dateDay ds">Mon, 8 Jan</div>
+            <img src="img/HeavyRain.png" class="icon" alt="" />
+            <div class="temp">
+              <div class="min">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+              <div class="max">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+            </div>
+          </div>
+          <div class="d4 d">
+            <div class="dateDay ds">Tue, 9 Jan</div>
+            <img src="img/LightCloud.png" class="icon" alt="" />
+            <div class="temp">
+              <div class="min">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+              <div class="max">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+            </div>
+          </div>
+          <div class="d5 d">
+            <div class="dateDay ds">Wed, 10 Jan</div>
+            <img src="img/Snow.png" class="icon" alt="" />
+            <div class="temp">
+              <div class="min">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+              <div class="max">
+                <span class="tem">10</span> <span class="uni">৹C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="r3">
+          <h2>Today's Highlights</h2>
+          <div class="row1">
+            <div class="wind r1child">
+              <p>Wind status</p>
+
+              <div class="w">
+                <span class="wValue value">7</span> <span class="u">mph</span>
+              </div>
+              <div class="direction">
+                <i class="fas fa-location-arrow"></i>WSW
+              </div>
+            </div>
+            <div class="hunidity r1child">
+              <p>Humidity</p>
+
+              <div class="h">
+                <span class="hValue value">84</span> <span class="u">%</span>
+              </div>
+              <div class="barUnit">
+                <p>0</p>
+                <p>50</p>
+                <p>100</p>
+              </div>
+              <progress id="bar" value="84" max="100"></progress>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="visibility r2child">
+              <p>Visibility</p>
+
+              <div class="v">
+                <span class="vValue value">6,4</span>
+                <span class="u">miles</span>
+              </div>
+            </div>
+            <div class="air r2child">
+              <p>Air Pressure</p>
+
+              <div class="a">
+                <span class="aValue value">998</span> <span class="u">mb</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="searchBar">
+        <div class="cross"><i class="fas fa-times"></i></div>
+        <div class="one">
+          <input type="text" id="searchPlace" placeholder="🔍Search Location" />
+          <button type="submit" class="searchButton">Search</button>
+        </div>
+        <!-- <div class="two">
+          <div class="sticker">London</div>
+          <div><i class="fas fa-greater-than"></i></div>
+        </div> -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  color: white;
+  font-family: Raleway;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* ==================Left side============== */
+
+.left {
+  width: 28vw;
+  background-color: rgb(65, 65, 151);
+  /* padding: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.l1 {
+  display: flex;
+  justify-content: space-around;
+  width: 28vw;
+}
+.search {
+  padding: 8px;
+  background-color: rgb(114, 110, 110);
+  box-shadow: 2px 2px 5px rgb(26, 25, 25);
+  cursor: pointer;
+}
+.geo {
+  padding: 7px 11px;
+  border-radius: 50%;
+  background-color: rgb(114, 110, 110);
+  box-shadow: 2px 2px 5px rgb(26, 25, 25);
+  cursor: pointer;
+}
+.l2 {
+  position: relative;
+  margin-top: -50px;
+}
+.cloudsB {
+  opacity: 0.1;
+  left: -110px;
+}
+
+.todayImage {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  height: 200px;
+}
+
+.tempToday {
+  font-size: 80px;
+}
+.unitToday {
+  font-size: 35px;
+  opacity: 0.7;
+}
+.l3 {
+  margin-top: -50px;
+}
+.l4 {
+  font-size: 30px;
+  opacity: 0.7;
+  /* margin-top: -50px; */
+  margin-bottom: 30px;
+}
+.l5,
+.l6 {
+  font-size: 25px;
+  opacity: 0.7;
+}
+.l5 {
+  margin-bottom: -17px;
+}
+.date,
+.day {
+  margin: 0px 10px;
+}
+.loc {
+  margin-left: 10px;
+}
+
+/* ===================Right side=============== */
+.right {
+  width: 72vw;
+  background-color: rgb(137, 137, 250);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 140px;
+}
+.r1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.far,
+.celsius {
+  padding: 10px 13px;
+  border-radius: 50%;
+  background-color: rgb(227, 40, 40);
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+  color: rgb(137, 36, 238);
+}
+.r2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.d {
+  margin-top: 30px;
+  height: 165px;
+  width: 145px;
+  background-color: rgb(72, 72, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid rgb(33, 10, 182);
+  border-radius: 10px;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+.r3 {
+  margin-top: 35px;
+}
+.r3 h2 {
+  font-size: 22px;
+}
+.r1child {
+  margin-top: 20px;
+  height: 150px;
+  width: 350px;
+  background-color: rgb(91, 68, 243);
+  border: 2px solid rgb(33, 10, 182);
+  border-radius: 10px;
+}
+.r2child {
+  margin-top: 20px;
+  height: 150px;
+  width: 350px;
+  background-color: rgb(91, 68, 243);
+  border: 2px solid rgb(33, 10, 182);
+  border-radius: 10px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  height: 80px;
+}
+.temp {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+.r1child,
+.r2child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.value {
+  font-size: 50px;
+  font-weight: bold;
+}
+.u {
+  font-size: 25px;
+}
+.fa-location-arrow {
+  margin: 10px;
+  padding: 7px 8px;
+  border-radius: 50%;
+  background-color: rgb(202, 48, 86);
+}
+.barUnit {
+  display: flex;
+  width: 340px;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+#bar {
+  accent-color:#fff;
+}
+/* ================searchbar============ */
+.searchBar {
+  width: 28vw;
+  height: 100vh;
+  position: absolute;
+  left: -100vw;
+  background-color: rgb(68, 68, 210);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: 1s;
+}
+.cross {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.one {
+  margin: 20px;
+  width: 24vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#searchPlace {
+  padding: 10px;
+  font-size: 15px;
+  width: 240px;
+  background-color: rgb(153, 153, 191);
+  border: 1px solid white;
+  color: white;
+}
+.searchButton {
+  padding: 12px;
+  /* margin-left: 6px; */
+  font-size: 15px;
+  background-color: rgb(3, 6, 13);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.two {
+  margin: 20px;
+  padding: 10px;
+  width: 24vw;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fa-greater-than {
+  font-size: 10px;
+}
+.two:hover {
+  border: 2px solid gray;
+}
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .d {
+    width: 110px;
+  }
+  .r1child,
+  .r2child {
+    width: 280px;
+  }
+  .cloudsB {
+    width: 380px;
+  }
+  .todayImage {
+    left: 100px;
+    top: 40px;
+  }
+  .l3 {
+    margin-top: 5px;
+  }
+  .one {
+    width: 20vw;
+    margin: 10px 3px;
+  }
+  .two {
+    width: 20vw;
+  }
+  #searchPlace {
+    padding: 5px;
+    width: 150px;
+  }
+  .searchButton {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .right {
+    padding: 8px 85px;
+  }
+  .d {
+    width: 80px;
+    height: 130px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .temp {
+    width: 80px;
+  }
+  .icon {
+    height: 60px;
+  }
+  .r1child,
+  .r2child {
+    width: 230px;
+  }
+  .r1child {
+    height: 160px;
+  }
+  .r2child {
+    height: 100px;
+  }
+  .value {
+    font-size: 45px;
+  }
+  .todayImage {
+    width: 100px;
+    height: 100px;
+    left: 132px;
+    top: 85px;
+  }
+  #searchPlace {
+    padding: 0px;
+    width: 120px;
+    font-size: 13px;
+  }
+  .searchButton {
+    width: 70px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .right {
+    padding: 8px 22px;
+  }
+  .tempToday {
+    font-size: 70px;
+  }
+  .l4 {
+    font-size: 25px;
+  }
+  .todayImage {
+    width: 148px;
+    height: 135px;
+    left: 105px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .left {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+  }
+  .right {
+    width: 100%;
+  }
+  .l1 {
+    width: 100%;
+  }
+  .r2,
+  .row1,
+  .row2 {
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* margin: 12px; */
+  }
+  .row1,
+  .row2 {
+    justify-content: center;
+  }
+  .searchBar {
+    width: 100vw;
+  }
+  .one {
+    width: 75vw;
+    justify-content: space-evenly;
+  }
+  .two {
+    width: 75vw;
+    justify-content: space-around;
+  }
+  #searchPlace {
+    width: 150px;
+  }
+  .searchBar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .cloudsB {
+    width: 350px;
+  }
+}
